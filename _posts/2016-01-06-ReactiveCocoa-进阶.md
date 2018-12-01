@@ -1,16 +1,14 @@
 ---
 layout:     post
-title:      ReactiveCocoa 进阶
-subtitle:   函数式编程框架 ReactiveCocoa 进阶
-date:       2017-01-06
+title:      Matlab定义函数的几种方法
+subtitle:   
+date:       2018-12-01
 author:     BY
-header-img: img/post-bg-ios9-web.jpg
+header-img: img/post1/title.jpg
 catalog: true
 tags:
-    - iOS
-    - ReactiveCocoa
-    - 函数式编程
-    - 开源框架
+    - MATLAB
+    - 数值分析
 ---
 # 前言
 
