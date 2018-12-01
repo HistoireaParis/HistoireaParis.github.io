@@ -5,9 +5,9 @@ header-img: img/post-bg-desk.jpg
 email: shiyuan.zhao@outlook.com
 description: "光学工程师的进阶之路"
 keyword: "马欣悦 赵诗源 optique optics"
-url: "https://github.com/HistoireaParis/HistoireaParis.github.io"          # your host, for absolute URL
+url: "http://HistoireaParis.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/HistoireaParis/HistoireaParis.github.io" # you code repository
+github_repo: "https://github.com/HistoireaParis/HistoireaParis.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
