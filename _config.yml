@@ -1,5 +1,5 @@
 # Site settings
-title: "ZHAO Shiyuan Blog"
+title: ZHAO Shiyuan Blog
 SEOTitle: 赵诗源的博客 | ZHAO Shiyuan Blog
 header-img: img/post-bg-desk.jpg
 email: shiyuan.zhao@outlook.com
@@ -53,11 +53,6 @@ highlighter: rouge
 kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
-
-
-# 评论系统
-# Disqus（https://disqus.com/）
-# disqus_username: qiubaiying
 
 # Gitalk
 gitalk:
