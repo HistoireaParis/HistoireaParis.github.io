@@ -107,9 +107,3 @@ service-worker: true
        # href: "https://developer.apple.com/"
     }
 ]
-# Deployment
-## Docs: http://hexo.io/docs/deployment.html
-deploy:
-  type: git
-  repository: git@github.com:HistoireaParis/HistoireaParis.github.io.git
-  branch: master
