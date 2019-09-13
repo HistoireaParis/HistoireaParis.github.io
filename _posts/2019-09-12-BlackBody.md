@@ -4,7 +4,7 @@ title:      BlackBody
 subtitle:   
 date:       2019-09-12
 author:     Z
-header-img: img/post1/title.jpg
+header-img: img/post2/1.jpg
 catalog: true
 tags:
     - 黑体辐射
