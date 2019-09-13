@@ -24,7 +24,7 @@ tags:
 
 人们早就发现物质可以发光。铁匠锻造金属时不同颜色渐变的现象，从暗红色到橙黄色的色变很清楚地告诉我们，辐射出来的光能量和频率与温度之间存在着某种对应的关系。比如火星表面温度大约为300K，所以呈现红色；我们的太阳这颗恒星，其光球表面温度为5778K，所以呈现黄色；参宿七温度大约在11400K左右，呈蓝色。
 
-![](https://HistoireaParis.github.io/img/post2/1.jpg)
+![](https://HistoireaParis.github.io/img/post2/2.jpg)
 
 >*Everything glows with the light of its own internal heat.*
 
@@ -34,4 +34,10 @@ tags:
 
 >在热力学里，黑体是一个理想化的模型。对于任何波长的电磁波吸收系数为1，透射系数为0。所表现出来的物理特性是温度对于每个部分恒定不变，并不与外界进行热交换，通过电磁辐射的方式保持热平衡状态，其辐射谱只取决于黑体的温度。值得注意的是，黑体不一定是黑色的。对于人的视觉来说，黑体在700K以下看起来是黑色的，因辐射能量不大，并且放出红外线。随着温度的升高，黑体开始放出可见光，最后变为白色，同时有紫外线。
 
->在引入黑体辐射之后，**Kirchhoff**证明其辐射本领E（）
+>在引入黑体辐射之后，**Kirchhoff**证明其辐射本领<img src="http://chart.googleapis.com/chart?cht=tx&chl= E(\upsilon,T)" style="border:none;">与吸收率<img src="http://chart.googleapis.com/chart?cht=tx&chl= A(\upsilon,T)" style="border:none;">之比是一个与物体本身无关的普适函数<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+f(\upsilon,T)" style="border:none;">，其中辐射本领指的是单位时间内从辐射体表面的单位面积上发射出的辐射能量的频率分布，而因为黑体的吸收率为1，这就意味着黑体辐射本身等价于普适函数，于其组成物质无关。
+
+紧接着不久，于1879年和1884年斯洛文尼亚物理学家**Jožef Stefan**和奥地利物理学家**Ludwig Boltzmann**分别独立地提出热力学的一个著名定律：一个黑体表面单位面积在单位时间内辐射出的总能量与黑体本身的热力学温度T的四次方成正比：<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+j^{\star }=\sigma T^{4}}" style="border:none;">，这个定律被后世脍炙人口为**Stefan-Boltzmann law**。提出过程中**Jožef Stefan**通过的是对实验数据的归纳总结，**Ludwig Boltzmann**则是从热力学理论出发，通过假设用光代替气体作为热机的工作介质，最终推导出与斯特藩的归纳结果相同的结论。
+
+但是，麦克斯韦方程组与热力学的结合看起来不是那么成功。
