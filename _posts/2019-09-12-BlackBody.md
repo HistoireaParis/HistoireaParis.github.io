@@ -24,7 +24,7 @@ tags:
 
 人们早就发现物质可以发光。铁匠锻造金属时不同颜色渐变的现象，从暗红色到橙黄色的色变很清楚地告诉我们，辐射出来的光能量和频率与温度之间存在着某种对应的关系。比如火星表面温度大约为300K，所以呈现红色；我们的太阳这颗恒星，其光球表面温度为5778K，所以呈现黄色；参宿七温度大约在11400K左右，呈蓝色。
 
-![](https://github.com/HistoireaParis/HistoireaParis.github.io/tree/master/img/post2/1.jpg)
+![](https://HistoireaParis.github.io/img/post2/1.jpg)
 
 >*Everything glows with the light of its own internal heat.*
 
