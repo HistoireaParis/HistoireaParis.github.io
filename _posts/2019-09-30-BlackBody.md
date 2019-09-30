@@ -2,7 +2,7 @@
 layout:     post
 title:      BlackBody
 subtitle:   
-date:       2019-09-12
+date:       2019-09-30
 author:     Z
 header-img: img/post2/1.jpg
 catalog: true
@@ -11,7 +11,6 @@ tags:
     - Optical Networks and Photonic Systems
     - 光通信
 ---
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 
 # 前言
 
@@ -36,8 +35,7 @@ tags:
 
 >在热力学里，黑体是一个理想化的模型。对于任何波长的电磁波吸收系数为1，透射系数为0。所表现出来的物理特性是温度对于每个部分恒定不变，并不与外界进行热交换，通过电磁辐射的方式保持热平衡状态，其辐射谱只取决于黑体的温度。值得注意的是，黑体不一定是黑色的。对于人的视觉来说，黑体在700K以下看起来是黑色的，因辐射能量不大，并且放出红外线。随着温度的升高，黑体开始放出可见光，最后变为白色，同时有紫外线。
 
->在引入黑体辐射之后，**Kirchhoff**证明其辐射本领<img src="http://chart.googleapis.com/chart?cht=tx&chl= E(\upsilon,T)" style="border:none;">与吸收率<img src="http://chart.googleapis.com/chart?cht=tx&chl= A(\upsilon,T)" style="border:none;">之比是一个与物体本身无关的普适函数<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-f(\upsilon,T)" style="border:none;">其中辐射本领指的是单位时间内从辐射体表面的单位面积上发射出的辐射能量的频率分布，而因为黑体的吸收率为1，这就意味着黑体辐射本身等价于普适函数，于其组成物质无关。
+>在引入黑体辐射之后，**Kirchhoff**证明其辐射本领与吸收率之比是一个与物体本身无关的普适函数。其中辐射本领指的是单位时间内从辐射体表面的单位面积上发射出的辐射能量的频率分布，而因为黑体的吸收率为1，这就意味着黑体辐射本身等价于普适函数，于其组成物质无关。
 
 紧接着不久，于1879年和1884年斯洛文尼亚物理学家**Jožef Stefan**和奥地利物理学家**Ludwig Boltzmann**分别独立地提出热力学的一个著名定律：一个黑体表面单位面积在单位时间内辐射出的总能量与黑体本身的热力学温度T的四次方成正比：<img src="http://chart.googleapis.com/chart?cht=tx&chl=
 j^{\star }=\sigma T^{4}}" style="border:none;">这个定律被后世脍炙人口为**Stefan-Boltzmann law**。提出过程中**Jožef Stefan**通过的是对实验数据的归纳总结，**Ludwig Boltzmann**则是从热力学理论出发，通过假设用光代替气体作为热机的工作介质，最终推导出与斯特藩的归纳结果相同的结论。
@@ -56,10 +54,50 @@ j^{\star }=\sigma T^{4}}" style="border:none;">这个定律被后世脍炙人口
 
 >空间模式，就是描述电磁场在有限空间V的数学基。
 
-但是它直观的感受是什么呢？为了使计算尽可能简单，我们选择一个长度为L的立方体腔，假设其四壁假定能完美导电，电场强度矢量E（r，t）在边界处消失为0，如Fig1.1所示。
+但是它直观的感受是什么呢？为了使计算尽可能简单，我们选择一个长度为L的立方体腔，假设其四壁假定能完美导电，电场强度矢量E(r，t)在边界处消失为0，如Fig1.1所示。
 ![](https://HistoireaParis.github.io/img/post2/1.PNG)
 
+## Spatial Dependence
 
 第一部分的计算完全是经典理论可以解释的，不受量子化（*quantization*）的影响（可能在之后的章节介绍）。由真空中电场的波动方程列出电场的关系：
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+{\partial ^{2}E(r,t) \over \partial t^{2}}=c^{2}\nabla ^{2}E(r,t)" style="border:none;">
+这里c是光速（the velocity of light）,加上麦克斯韦方程组：
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+\nabla \cdot E(r,t)=0" style="border:none;">
+其方程组的解满足边界条件后，如下所示
+![](https://HistoireaParis.github.io/img/post2/2.PNG)
+我们可以得知，E(t)与就具体位置无关，波矢(*wavevector*)**k**满足
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+k_x=\pi\nu_x/L" style="border:none;">
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+k_y=\pi\nu_y/L" style="border:none;">
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+k_z=\pi\nu_z/L" style="border:none;">
+其中v为整数，且只能有一个为0
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+\nu_x, \nu_y, \nu_z = 0,1,2,3,..." style="border:none;">
+这些可允许存在的波矢可以画作一个三维的点阵(见Fig1.2)，每个点之间的距离为
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+\pi/L" style="border:none;">
+![](https://HistoireaParis.github.io/img/post2/3.PNG)
 
-$$a + b$$
+我们可以很轻易地验证得到的答案，比如让y=0或L，z=0或L，E在x方向的分量就为0了。还发现边界条件(*boundary condition*)也可以满足把cos和sin互换，但是麦克斯韦方程组(*Maxwell equation*)就不能满足了，这有悖于对称性，所以我们更正为：
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+k \cdot E(t)=0" style="border:none;">
+也就是说E(t)与波矢k成直角，故对于每个允许的波矢都有两个不同的独立的方向，即偏振。
+
+>综上所述，因为边界条件的限制，波矢k必须取离散的整数，那么每个三元整数组(x,y,z)和偏振的(1，2)定义了一个辐射场的空间模式。任意一个光腔内激发出的电磁场都可以用这些模式的求和表示。
+
+那么怎么计算模式的数目呢？
+>回归积分的思想，我们先要知道k到k+dk之间的波矢数。这个正好是Fig1.2中，半径k和k+dk之间的八分之一球壳包含的波矢数(因为波矢k只能取正整数)。如果进一步近似，因为现实中pi/L远远要比k的值小，所以我们当作k是连续的，由此可知：
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+\frac{1} 8 (4\pi k^2 dk)(\pi/L)^{-3}\times2" style="border:none;">
+这里我们考虑到了偏振的两个状态。
+
+接着，我们定义模式密度$\pho(k)dk$为每单位体积内的模式数，那么
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+\rho(k)dk =k^2dk/\pi^2" style="border:none;">
+由$\omega=ck$得，
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+\rho(\omega)d\omega =\omega^2d\omega/\pi^2c^3" style="border:none;">
