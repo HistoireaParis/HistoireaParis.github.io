@@ -11,7 +11,7 @@ tags:
     - Optical Networks and Photonic Systems
     - 光通信
 ---
-
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # 前言
 
 >在法工程师学习的第三年，我选择了**ROSP**（*Réseaux Optiques et Systèmes Photoniques*）的**Master 2**项目，重新拾起了光学和通信的相关知识，所以想把一些自己的理解加上老师和国外经典教材结合起来，并记录下来，做到苟日新，日日新，又日新。如有纰漏，欢迎指教！
@@ -90,14 +90,14 @@ k \cdot E(t)=0" style="border:none;">
 >综上所述，因为边界条件的限制，波矢k必须取离散的整数，那么每个三元整数组(x,y,z)和偏振的(1，2)定义了一个辐射场的空间模式。任意一个光腔内激发出的电磁场都可以用这些模式的求和表示。
 
 那么怎么计算模式的数目呢？
->回归积分的思想，我们先要知道k到k+dk之间的波矢数。这个正好是Fig1.2中，半径k和k+dk之间的八分之一球壳包含的波矢数(因为波矢k只能取正整数)。如果进一步近似，因为现实中pi/L远远要比k的值小，所以我们当作k是连续的，由此可知：
+>回归积分的思想，我们先要知道k到k+dk之间的波矢数。这个正好是Fig1.2中，半径k和k+dk之间的八分之一球壳包含的波矢数(因为波矢k只能取正整数)。如果进一步近似，因为现实中pi/L远远要比k的值小，所以我们当作k是连续的，考虑到了偏振的两个状态。由此可知：
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=
 \frac{1} 8 (4\pi k^2 dk)(\pi/L)^{-3}\times2" style="border:none;">
-这里我们考虑到了偏振的两个状态。
 
-接着，我们定义模式密度$\pho(k)dk$为每单位体积内的模式数，那么
+
+接着，我们定义模式密度$$\pho(k)dk$$为每单位体积内的模式数，那么
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=
 \rho(k)dk =k^2dk/\pi^2" style="border:none;">
-由$\omega=ck$得，
+由\\(\omega=ck\\)得，
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=
 \rho(\omega)d\omega =\omega^2d\omega/\pi^2c^3" style="border:none;">
