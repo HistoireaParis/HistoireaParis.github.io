@@ -76,7 +76,7 @@ k_y=\pi\nu_y/L" style="border:none;">
 k_z=\pi\nu_z/L" style="border:none;">
 其中v为整数，且只能有一个为0
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=
-\nu_x, \nu_y, \nu_z = 0,1,2,3,..." style="border:none;">
+\nu_x, \nu_y, \nu_z = 0, 1, 2, 3, ..." style="border:none;">
 这些可允许存在的波矢可以画作一个三维的点阵(见Fig1.2)，每个点之间的距离为pi/L:
 ![](https://HistoireaParis.github.io/img/post2/3.PNG)
 
