@@ -76,7 +76,7 @@ k_y=\pi\nu_y/L" style="border:none;">
 k_z=\pi\nu_z/L" style="border:none;">
 其中v为整数，且只能有一个为0
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=
-\nu_x, \nu_y, \nu_z = 0, 1, 2, 3, ..." style="border:none;">
+\nu_x, \nu_y, \nu_z = 0, 1, 2, 3 , ..." style="border:none;">
 这些可允许存在的波矢可以画作一个三维的点阵(见Fig1.2)，每个点之间的距离为pi/L:
 ![](https://HistoireaParis.github.io/img/post2/3.PNG)
 
@@ -98,3 +98,11 @@ k \cdot E(t)=0" style="border:none;">
 \rho(k)dk =k^2dk/\pi^2" style="border:none;">
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=
 \rho(\omega)d\omega =\omega^2d\omega/\pi^2c^3" style="border:none;">
+
+根据模式密度，我们沿着波矢空间积分或者沿着角速度积分都可以，就求得整个的模式数。
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+\sum_{\lambda =1,2}\sum_{k} \rightarrow \int dk\left ( Vk^2/\pi^2 \right )\rightarrow \int d\omega \left ( V\omega ^2/\pi^2c^3 \right )" style="border:none;">
+
+我们可以预见，只要知道模式数，我们就可以直接与总能量建立联系。因为接下来的这一步就是考虑，能量是怎么在这些可允许的模式上分布的，也就是普朗克伟大的地方。
+
+### Time Dependence
