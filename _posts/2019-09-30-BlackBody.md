@@ -162,4 +162,36 @@ udv= \frac{8\pi v^2}{c^3} kT dv" style="border:none;">
 我们很容易看出，当频率v越来越大的时候，能量密度u也越来越大，直到无穷，即在短波区(高频紫外区)变为**“紫外灾难”**(*ultraviolet catastrophe*)。维恩因为理论上的不严格，进而与实验不相符时可以理解的，但是瑞利公式是严格按照经典理论，走着“能量均分”的阳光大道得出的，就给物理界带来极大的困惑，动摇了经典物理的基础。
 ![](https://HistoireaParis.github.io/img/post2/4.png)
 
-#### 普朗克公式
+## 03
+
+我们可以从统计力学，电磁学等不同角度来探究普朗克公式的推导。整体的思想是把瑞利在低频的优点和维恩在高频的优点结合起来。
+
+### 天才的内插法
+
+1899年，普朗克运用经典电磁理论，研究了封闭在一个具有理想反射壁的空腔的电磁辐射，采用合资振子模型，由运动方程出发，导出单位体积的电磁辐射能和频率间隔的模式数，振子平均能量的关系：
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= u= \frac{8\pi v^2}{c^3} \bar{\varepsilon}" style="border:none;">
+接着用热力学方法探讨上式的振子平均能量的形式。他以维恩公式的
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= u(v)= \frac{8\pi v^2}{c^3} \alpha e^{-\frac{\beta v}{T}}" style="border:none;">
+以及相应的热力学关系(熵S)为一极限情况
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+\frac{\mathrm{d^2}S }{\mathrm{d} \bar{\varepsilon^2 }}=-\frac{1}{a\bar{\varepsilon}}" style="border:none;">
+并以鲁本斯和库尔鲍姆的实验结果“单色辐射的强度在温度高时与温度成正比”及其相应的热力学关系为另一极限
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= \frac{\mathrm{d^2}S }{\mathrm{d} \bar{\varepsilon^2 }}=-\frac{c}{\bar{\varepsilon}^2}
+" style="border:none;">
+做了天才的猜测(默默吐槽就是把两个经典实验结论综合了一下)，使用内插法，得到
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= \frac{\mathrm{d^2}S }{\mathrm{d} \bar{\varepsilon^2 }}=\frac{\alpha}{\bar{\varepsilon}(\beta + \bar{\varepsilon})}
+" style="border:none;">
+对此积分可得到
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= \frac{\mathrm{d}S }{\mathrm{d} \bar{\varepsilon }}=(\alpha/\beta)[ln\bar{\varepsilon }-ln(\beta + \bar{\varepsilon })]
+" style="border:none;">
+又因为
+<img src="http://chart.googleapis.com/chart?cht=tx&chl= \frac{\mathrm{d}S }{\mathrm{d} \bar{\varepsilon }}=\frac{1}{T}
+" style="border:none;">
+立即得到
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=  \bar{\varepsilon }=\frac{\beta}{e^{-\beta/\alpha T}-1}
+" style="border:none;">
+后来人们求出alpha和beta所代表的物理常数，就可得到经典的普朗克公式：
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=  u_vdv=\frac{8 \pi v^2}{c^3}\frac{hv}{e^{-hv/k T}-1}
+" style="border:none;">
+
+### 怎么说服自己呢
