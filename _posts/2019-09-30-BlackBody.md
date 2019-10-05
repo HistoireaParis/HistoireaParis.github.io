@@ -19,7 +19,7 @@ tags:
 
 # 背景
 
->多年以后，**Planck**重新思考自己的科学生涯，准会想起冥冥中命运带他去打开潘多拉魔盒那个遥远的下午。当时，物理学的大厦基石是由**Newton**理论与经典热力学组成的，一个个公式定理都围绕着这个基础进行延申，光以太和能量均分定理，麦克斯韦方程组和玻尔兹曼分布，简洁而美丽，活象上帝旨意。但这块天地里有的还是新开辟的，许多东西都叫不出名字，不得不用手指指点点。1900年4月，**Lord Kelvin**，在世纪交接的欢庆声中，在英国皇家学会发表讲演。这位眼神敏锐的北爱尔兰人，满脸络腮胡子，凭借着他对物理异于常人的天才直觉和洞察力，向听众形象地介绍了他所谓的两朵“令人不安的乌云”。"*The beauty and clearness of the dynamical theory, which asserts heat and light to be modes of motion*，"他用刺耳的声调说，"*is at present obscured by two clouds*。"谁料想**Planck**狂热的想象力超过了大自然的创造力，甚至越过了奇迹和魔力的限度，他认为第二朵乌云下面是另外一个全新的世界。
+>多年以后，**Planck**重新思考自己的科学生涯，准会想起冥冥中命运带他去打开潘多拉魔盒那个遥远的下午。当时，物理学的大厦基石是由**Newton**理论与经典热力学组成的，一个个公式定理都围绕着这个基础进行延申，光以太和能量均分定理，麦克斯韦方程组和玻尔兹曼分布，简洁而美丽，活象上帝旨意。但这块天地里有的还是新开辟的，许多东西都叫不出名字，不得不用手指指点点。1900年4月，**Lord Kelvin**，在世纪交接的欢庆声中，在英国皇家学会发表讲演。这位眼神敏锐的北爱尔兰人，满脸络腮胡子，凭借着他对物理异于常人的天才直觉和洞察力，向听众形象地介绍了他所谓的两朵“令人不安的乌云”。"*The beauty and clearness of the dynamical theory, which asserts heat and light to be modes of motion*，"他用刺耳的声调说，"*is at present obscured by two clouds*。"谁料想**Planck**狂热的想象力超过了大自然的创造力，甚至越过了奇迹和魔力的限度，他认为第二朵乌云下面是另外一个全新的世界。（这些都是胡说的哈哈哈）
 
 # 01
 
@@ -98,6 +98,8 @@ k \cdot E(t)=0" style="border:none;">
 \rho(k)dk =k^2dk/\pi^2" style="border:none;">
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=
 \rho(\omega)d\omega =\omega^2d\omega/\pi^2c^3" style="border:none;">
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+\rho(\nu)d\nu =8\pi\nu^2d\nu/c^3" style="border:none;">
 
 根据模式密度，我们沿着波矢空间积分或者沿着角速度积分都可以，就求得整个的模式数。
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=
@@ -106,3 +108,44 @@ k \cdot E(t)=0" style="border:none;">
 我们可以预见，只要知道模式数，我们就可以直接与总能量建立联系。因为接下来的这一步就是考虑，能量是怎么在这些可允许的模式上分布的，也就是普朗克伟大的地方。
 
 ### Time Dependence
+
+我们之前说了很多关于电磁场的空间依赖关系，第二步就是计算在温度T下，每个模式上包含了多少能量。人们为了这个争论了很久，进而衍生出“紫外灾难”，让维恩和瑞利等大物理学家栽了跟头。
+
+#### 维恩近似
+
+在东普鲁士出生的维恩（*Wilhelm Wien*）与同事路德维希·霍尔伯恩（*Ludwig Holborn*）一起研究用勒沙特列（*Le Chatelier*）温度计测量高温的方法，并对热动力学进行了相关的研究。也就在这段期间，他从经典热力学的思维出发，借统计热力学之手（麦克斯韦速率分布），并完全基于对实验数据的经验总结而得到了维恩近似（*Wien Approximation*）。
+
+我们省略之前经典热力学的推导步骤，直接由这个中间结论入手（如果有机会我会给大家介绍推到过程）：
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+u=v^3\varphi (\frac{v}{T}) " style="border:none;">
+
+以当时维恩的思考方式，能通过一次实验，就可以得到一组在给定温度T下u与v的一一对应数据，进而描绘能量密度u随频率v的变化曲线，拟合出函数的形式，再扩展为任意温度T下的任意频率v的能量密度u。
+
+于是，1896年，维恩通过实验数据拟合出了这个函数，并通过几个特殊假设，导出了黑体辐射的最终近似公式。
+
+>假设一：温度为T的黑体辐射，可以类比为同样温度下的理想气体分子，适用于热力学当中的麦克斯韦速率分布律。即
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+f(v)=4\pi v^2 (\frac{m}{2\pi k_B T} )^{\frac{3}{2}}  e^{-{\frac{m v^2}{2 k_B T }}}  " style="border:none;">
+
+>假设二：这种类比的理想气体分子的动能与黑体辐射的频率成正比。即
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+\frac{1}{2}mv^2=Kv " >
+
+由这两个假设，把麦克斯韦速率分布律中的速度v换成频率v，联立可得
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+f(v)=4\pi \frac{2Kv}{m} (\frac{m}{2\pi k_B T} )^{\frac{3}{2}}  e^{-{\frac{Kv}{ k_B T }}}  " style="border:none;">
+
+维恩当然想到，除了将黑体辐射与理想气体分子进行类比，其能量密度u与分布律f应成正比关系，再加上还应与封闭容器的单位体积内的模式数成正比，于是
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+f(v)=C \frac{8\pi v^2}{c^3} \times4\pi \frac{2Kv}{m} (\frac{m}{2\pi k_B T} )^{\frac{3}{2}}  e^{-{\frac{Kv}{ k_B T }}}    " style="border:none;">
+
+ 综上所述，我们常见的维恩公式就是
+ <img src="http://chart.googleapis.com/chart?cht=tx&chl=
+ u(v)= a v^3 e^{-\frac{\beta v}{T}}" style="border:none;">
+
+那么接下来的工作就是实验测得常数alpha和beta的具体值就好了。事情在短波段进展的很好，但是长波段就出现了严重偏差。
+![](https://HistoireaParis.github.io/img/post2/3.jpg)
+
+小短评：虽然维恩的假设现在看起来很荒谬，方法也不太恰当，但是是因实验远远领先于理论的表现，最终也起到了一定的历史意义。他就像一个最卓越的工程师，在对问题本质一无所知的情况下，给出了一定范围内的解决方案。
+
+#### 瑞利公式
