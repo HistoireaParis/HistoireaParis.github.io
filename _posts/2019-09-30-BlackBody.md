@@ -113,9 +113,9 @@ k \cdot E(t)=0" style="border:none;">
 
 #### 维恩近似
 
-在东普鲁士出生的维恩（*Wilhelm Wien*）与同事路德维希·霍尔伯恩（*Ludwig Holborn*）一起研究用勒沙特列（*Le Chatelier*）温度计测量高温的方法，并对热动力学进行了相关的研究。也就在这段期间，他从经典热力学的思维出发，借统计热力学之手（麦克斯韦速率分布），并完全基于对实验数据的经验总结而得到了维恩近似（*Wien Approximation*）。
+在东普鲁士出生的维恩(*Wilhelm Wien*)与同事路德维希·霍尔伯恩(*Ludwig Holborn*)一起研究用勒沙特列(*Le Chatelier*)温度计测量高温的方法，并对热动力学进行了相关的研究。也就在这段期间，他从经典热力学的思维出发，借统计热力学之手(麦克斯韦速率分布)，并完全基于对实验数据的经验总结而得到了维恩近似(*Wien Approximation*)。
 
-我们省略之前经典热力学的推导步骤，直接由这个中间结论入手（如果有机会我会给大家介绍推到过程）：
+我们省略之前经典热力学的推导步骤，直接由这个中间结论入手(如果有机会我会给大家介绍推到过程):
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=
 u=v^3\varphi (\frac{v}{T}) " style="border:none;">
 
@@ -130,22 +130,36 @@ f(v)=4\pi v^2 (\frac{m}{2\pi k_B T} )^{\frac{3}{2}}  e^{-{\frac{m v^2}{2 k_B T }
 >假设二：这种类比的理想气体分子的动能与黑体辐射的频率成正比。即
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=
 \frac{1}{2}mv^2=Kv " >
-
 由这两个假设，把麦克斯韦速率分布律中的速度v换成频率v，联立可得
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=
 f(v)=4\pi \frac{2Kv}{m} (\frac{m}{2\pi k_B T} )^{\frac{3}{2}}  e^{-{\frac{Kv}{ k_B T }}}  " style="border:none;">
-
 维恩当然想到，除了将黑体辐射与理想气体分子进行类比，其能量密度u与分布律f应成正比关系，再加上还应与封闭容器的单位体积内的模式数成正比，于是
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=
 f(v)=C \frac{8\pi v^2}{c^3} \times4\pi \frac{2Kv}{m} (\frac{m}{2\pi k_B T} )^{\frac{3}{2}}  e^{-{\frac{Kv}{ k_B T }}}    " style="border:none;">
 
  综上所述，我们常见的维恩公式就是
  <img src="http://chart.googleapis.com/chart?cht=tx&chl=
- u(v)= a v^3 e^{-\frac{\beta v}{T}}" style="border:none;">
+ u(v)= \alpha v^3 e^{-\frac{\beta v}{T}}" style="border:none;">
 
-那么接下来的工作就是实验测得常数alpha和beta的具体值就好了。事情在短波段进展的很好，但是长波段就出现了严重偏差。
+那么接下来的工作就是实验测得常数alpha和beta的具体值就好了。事情在短波段(紫外区)进展的很好，但是长波段(红外区)就出现了严重偏差。
 ![](https://HistoireaParis.github.io/img/post2/3.jpg)
 
 小短评：虽然维恩的假设现在看起来很荒谬，方法也不太恰当，但是是因实验远远领先于理论的表现，最终也起到了一定的历史意义。他就像一个最卓越的工程师，在对问题本质一无所知的情况下，给出了一定范围内的解决方案。
 
 #### 瑞利公式
+
+1900年6月，英国物理学家瑞利(*Rayleigh*)为了反对维恩在推导过程中引入的假设不可靠，就利用电磁波振动模型(即按照经典电磁场理论和经典统计物理理论)导出了一个新的辐射公式，后经金斯(*Jeans*)于1905年改进，合称瑞利-金斯公式。
+
+当时思考空腔内电磁波和腔壁做简谐运动的原子交换能量达到平衡时满足的条件时：
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+u(v,T)= \rho(v)\bar{\varepsilon}(v,T)" style="border:none;">
+其中，等式右边第一项为模式密度，第二项为空墙器壁原子做简谐运动的平均能量。为了计算它，瑞利采用了统计力学中的能量均分定理：
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+\bar{\varepsilon}(v,T)=\frac{\int_{0}^{\infty}\varepsilon e^{-\varepsilon /kT}d\varepsilon }{\int_{0}^{\infty}e^{-\varepsilon/kT}d\varepsilon } =kT  " style="border:none;">
+所以，带入可知，常见的瑞利公式为
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=
+udv= \frac{8\pi v^2}{c^3} kT dv" style="border:none;">
+我们很容易看出，当频率v越来越大的时候，能量密度u也越来越大，直到无穷，即在短波区(高频紫外区)变为**“紫外灾难”**(*ultraviolet catastrophe*)。维恩因为理论上的不严格，进而与实验不相符时可以理解的，但是瑞利公式是严格按照经典理论，走着“能量均分”的阳光大道得出的，就给物理界带来极大的困惑，动摇了经典物理的基础。
+![](https://HistoireaParis.github.io/img/post2/4.png)
+
+#### 普朗克公式
