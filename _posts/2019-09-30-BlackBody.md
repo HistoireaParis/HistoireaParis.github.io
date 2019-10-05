@@ -179,11 +179,9 @@ udv= \frac{8\pi v^2}{c^3} kT dv" style="border:none;">
 <img src="http://chart.googleapis.com/chart?cht=tx&chl= \frac{\mathrm{d^2}S }{\mathrm{d} \bar{\varepsilon^2 }}=-\frac{c}{\bar{\varepsilon}^2}
 " style="border:none;">
 做了天才的猜测(默默吐槽就是把两个经典实验结论综合了一下)，使用内插法，得到
-<img src="http://chart.googleapis.com/chart?cht=tx&chl= \frac{\mathrm{d^2}S }{\mathrm{d} \bar{\varepsilon^2 }}=\frac{\alpha}{\bar{\varepsilon}(\beta + \bar{\varepsilon})}
-" style="border:none;">
+![](https://HistoireaParis.github.io/img/post2/2.gif)
 对此积分可得到
-<img src="http://chart.googleapis.com/chart?cht=tx&chl= \frac{\mathrm{d}S }{\mathrm{d} \bar{\varepsilon }}=(\alpha/\beta)[ln\bar{\varepsilon }-ln(\beta + \bar{\varepsilon })]
-" style="border:none;">
+![](https://HistoireaParis.github.io/img/post2/1.gif)
 又因为
 <img src="http://chart.googleapis.com/chart?cht=tx&chl= \frac{\mathrm{d}S }{\mathrm{d} \bar{\varepsilon }}=\frac{1}{T}
 " style="border:none;">
@@ -191,7 +189,7 @@ udv= \frac{8\pi v^2}{c^3} kT dv" style="border:none;">
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=  \bar{\varepsilon }=\frac{\beta}{e^{-\beta/\alpha T}-1}
 " style="border:none;">
 后来人们求出alpha和beta所代表的物理常数，就可得到经典的普朗克公式：
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=  u_vdv=\frac{8 \pi v^2}{c^3}\frac{hv}{e^{-hv/k T}-1}
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=  u_vdv=\frac{8 \pi v^2}{c^3}\frac{hv}{e^{hv/k T}-1}
 " style="border:none;">
 
 ### 怎么说服自己呢
