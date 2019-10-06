@@ -230,3 +230,9 @@ udv= \frac{8\pi v^2}{c^3} kT dv" style="border:none;">
 ![](https://HistoireaParis.github.io/img/post2/4.jpg)
 
 我们可以更形象地表达这个差异。
+
+## 引用
+
+1.《*The Quantum Theory of Light, 3rd ed. (Oxford Science Publications)*》 2000 **Rodney Loudon**
+
+2.《*普朗克公式推导的历史探究*》 1985 **金尚年, 田卫东** 复旦大学物理系
