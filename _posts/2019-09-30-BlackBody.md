@@ -220,6 +220,13 @@ udv= \frac{8\pi v^2}{c^3} kT dv" style="border:none;">
 " style="border:none;">
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=  \bar\varepsilon = \frac{\varepsilon_0}{e^{\varepsilon_0/kT}-1}
 " style="border:none;">
-考虑到维恩的假设二，谐振子的能量必定正比于辐射场的频率，所以epsilon_0=hv。h也被称为普朗克常数。
+考虑到维恩的假设二，谐振子的能量必定正比于辐射场的频率，所以epsilon_0=hv。h也被称为普朗克常数(*Planck's constant*)。
 
 小插曲：普朗克推算完这些公式，在得知自己要打破经典物理的根基时，把这个正比常数用h来表示，即德语里的救命“Hilfe”的缩写。
+
+## 04
+
+我们回首再看走过的路，会发现很多有趣的现象。比如，普朗克公式与维恩公式和瑞利公式的关系。
+![](https://HistoireaParis.github.io/img/post2/4.jpg)
+
+我们可以更形象地表达这个差异。
