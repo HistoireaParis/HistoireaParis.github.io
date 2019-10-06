@@ -192,4 +192,34 @@ udv= \frac{8\pi v^2}{c^3} kT dv" style="border:none;">
 <img src="http://chart.googleapis.com/chart?cht=tx&chl=  u_vdv=\frac{8 \pi v^2}{c^3}\frac{hv}{e^{hv/k T}-1}
 " style="border:none;">
 
-### 怎么说服自己呢
+### Hilfe！
+普朗克的经验公式取得了成功，但是并不能从已知的理论中得到证明，而更像是取巧得来。于是，他决定进一步寻找隐藏在上述公式背后的物理实质。
+
+但是经过努力后，他得出了一个同经典概念严重背离的物理解释，即黑体空腔上器壁上的原子谐振子的能量是量子化的，而且谐振子与腔内电磁波的能量交换也是量子化的。
+
+他将能量E划分为P个相等的能量单元，于是有
+  <img src="http://chart.googleapis.com/chart?cht=tx&chl=  E=P\varepsilon_0
+" style="border:none;">
+这些能量单元epsilon_0可以按照不同的比例分配给N个谐振子。由于这些能量单元都是不可区分的，因此分配方案可以求出。以P=10个能量单元分配到N=5个谐振子上为例。我们由排列组合(十个完全一样的小球被5-1=4个相同的横线分开)可以轻易得出，分配方案有下列这么多种：
+![](https://HistoireaParis.github.io/img/post2/3.gif)
+推而广之，P个能量单元分配到N个谐振子的方案数就是：
+![](https://HistoireaParis.github.io/img/post2/4.gif)
+显然P>>1,N>>1,可以采用斯特令近似公式
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=  N!=N^N
+" style="border:none;">
+将上式化为
+![](https://HistoireaParis.github.io/img/post2/5.gif)
+分配方案数Omega与N个谐振子的玻尔兹曼熵S_N的关系为
+![](https://HistoireaParis.github.io/img/post2/6.gif)
+又因为总能量为E，故振子的平均能量为<img src="http://chart.googleapis.com/chart?cht=tx&chl=  \bar\varepsilon = \frac{P\varepsilon_0}{N}
+" style="border:none;">
+带入S_N并除以N得到单个谐振子的熵S为
+![](https://HistoireaParis.github.io/img/post2/7.gif)
+再根据下列热力学关系，对平均能量epsilon_0微分得
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=  \frac{1}{T} = \frac{dS}{d\bar\varepsilon}
+" style="border:none;">
+<img src="http://chart.googleapis.com/chart?cht=tx&chl=  \bar\varepsilon = \frac{\varepsilon_0}{e^{\varepsilon_0/kT}-1}
+" style="border:none;">
+考虑到维恩的假设二，谐振子的能量必定正比于辐射场的频率，所以epsilon_0=hv。h也被称为普朗克常数。
+
+小插曲：普朗克推算完这些公式，在得知自己要打破经典物理的根基时，把这个正比常数用h来表示，即德语里的救命“Hilfe”的缩写。
