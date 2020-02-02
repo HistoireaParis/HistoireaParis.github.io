@@ -32,29 +32,26 @@ tags:
 
 但是对混沌理论的研究直到20世纪50年代前仍处于黑暗中。尽管动力学衍生的非线性振子模型广泛地用于当时新型的科技里，如雷达，广播，锁相环甚至激光。如下图，是两个二极管激光器的时域强度输出曲线，你能看出什么区别吗？
 
-![](https://HistoireaParis.github.io/img/post3/3.png)
+![](https://HistoireaParis.github.io/img/post3/3.PNG)
 
 或许经过傅里叶变化后会更直观一点。
 
-![](https://HistoireaParis.github.io/img/post3/4.png)
+![](https://HistoireaParis.github.io/img/post3/4.PNG)
 
 我们会发现右侧就是单纯的噪音，而左侧是混沌效应——即被非线性系统的一个特定频率驱使的弛豫现象。下图是1961年发明的红宝石激光器输出图像，连当时的物理学家也错把混沌现象看作是噪音。
-![](https://HistoireaParis.github.io/img/post3/5.png)
+![](https://HistoireaParis.github.io/img/post3/5.PNG)
 
 1950年左右，高速计算机的发明成为了动力学的分水岭。高速高性能的计算机能够以之前不可能的方式去计算那些方程，这样就可以给予我们一些对非线性系统的直觉启示。时间来到1963的**Edward Lorenz**，他研究一个预测气象的数学模型，并将其简化成由三个互相联系的常微分方程组成的非线性系统。
-![](https://HistoireaParis.github.io/img/post3/6.png)
+![](https://HistoireaParis.github.io/img/post3/6.PNG)
 他惊奇地发现这个系统对初值条件很敏感，一些微小的波动就会造成结果的大不同，也就是说这个非线性系统不可被预测，因为一点点的测量错误就会被快速放大，在最终得到一个完全相异的结论。
-![](https://HistoireaParis.github.io/img/post3/7.png)
+![](https://HistoireaParis.github.io/img/post3/7.PNG)
 所以这会是一个悲伤的故事？我们不可避免地会有对气象的测量错误，那么对较长时间的预测看起来将不复存在。在1972年，华盛顿的一次学术会议上，著名的**蝴蝶效应**被介绍给了大家。
-![](https://HistoireaParis.github.io/img/post3/8.png)
+![](https://HistoireaParis.github.io/img/post3/8.PNG)
 
 # 02
 
-我们现在撇开理论上的前期铺垫工作，开始真正接触**Planck**的思考过程。黑体辐射的能量来自其辐射出的电磁场能量。根据**Poynting vector**可知，而能量密度u与电磁场的电场强度和磁场强度有关。所以想弄清黑体辐射的能量，我们需要估计黑体的电磁场分布。
+**Edward Lorenz**用了**Poincaré**的几何方法——相空间(**Phase Space**)来
 
-总是很方便地在一个光腔（*cavity*）里讨论电磁辐射的能量。因为在这个系统里，电磁场只能以离散的空间模式被激发，可以大大化简计算过程。一些光学实验就是使用受限的空间区域，比如激光里的**Fabry-Perot cavity**。但大多数的光学实验没有一个明晰的光腔，而是让光能从光源经过一系列的交换介质到达探测器。即使通常使用一些光腔使光能进出，但整体上系统并没有被限制进去。
-
-**Planck's law**是描述在一定温度T下，封闭光腔内电磁场辐射能量的频谱分布，（与黑体等效），故简称黑体辐射。计算频率分布时，我们常常从两个方面去考虑。第一，考虑光腔内场的空间依赖（*spatial dependence*）去确定能够激发的空间模式数；第二，考虑光腔内场的时间依赖（*time dependence*）去计算每个空间模式所携带的能量数值。
 
 那么什么是光腔的空间模式（*mode*）呢？
 
