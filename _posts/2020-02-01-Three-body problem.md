@@ -78,6 +78,10 @@ tags:
 ![](https://HistoireaParis.github.io/img/post3/11.PNG)
 如上图所示，我实习所要研究的量子点激光器就属于半导体激光器的范畴，即B类激光器。我们只需要两个方程用来分别描述其电场和载流子浓度就可以了。因为B类激光器的相空间是二维的，不满足产生混沌的条件，所以它的相图一般为一个固定的点或者周期性的路径循环。
 
+![](https://HistoireaParis.github.io/img/post3/12.PNG)
+![](https://HistoireaParis.github.io/img/post3/13.PNG)
+![](https://HistoireaParis.github.io/img/post3/14.PNG)
+
 
 ## 04
 
