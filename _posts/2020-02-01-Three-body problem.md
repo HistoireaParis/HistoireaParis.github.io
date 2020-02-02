@@ -96,4 +96,4 @@ tags:
 
 1.《*Nonlinear Dynamics And Chaos: With Applications To Physics, Biology, Chemistry, And Engineering*》 2001 **Stephen Strogatz**
 
-2.*Semiconductor lasers: High-speed and nonlinear dynamics* M2 ROSP Course, Télécom Paris, M.Frédéric GRILLOT
+2.*Semiconductor lasers: High-speed and nonlinear dynamics* M2 ROSP Course, Télécom Paris, **M.Frédéric GRILLOT**
