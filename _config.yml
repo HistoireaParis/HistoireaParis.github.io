@@ -1,5 +1,5 @@
 # Site settings
-title: Z Blog
+title: 
 SEOTitle:  Z Blog
 header-img: img/background.jpg
 email: shiyuan.zhao@outlook.com
@@ -11,7 +11,7 @@ github_repo: "https://github.com/HistoireaParis/HistoireaParis.github.io.git" # 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Il faut être l'homme de la pluie et l'enfant du beau temps."
+sidebar-about-description: "Dans le monde il n’y a qu’une vérité : être fidèle à la vie et l’aimer."
 sidebar-avatar: /img/myself.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
