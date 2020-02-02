@@ -24,7 +24,7 @@ tags:
 
 # 01
 
-##Chaos is not an invention but a real discovery!
+## Chaos is not an invention but a real discovery!
 
 虽然动力学目前是一个跨学科的主题，但是它最原本是来源于物理学的一个分支。自17世纪中叶，**Newton**发明了微分方程和牛顿经典力学，以及发现了著名的万有引力定律(**universal gravitation**)用来解释**Kepler**的行星运动法则。这些成就使人们理解了两体运动，即计算地球与太阳的互相作用——经典的平方反比的定律。接下来几代的数学家和物理学家都想对于三体问题(太阳，地球，月亮)上扩展**Newton**的研究方法，让人惊奇的是，这个似乎比两体问题难得多，甚至是无解的(无法得到精确解的形式)。
 
@@ -52,7 +52,7 @@ tags:
 
 # 02
 
-##Phase Space
+## Phase Space
 
 **Edward Lorenz**用了**Poincaré**的几何方法——相空间(**Phase Space**)来定性处理这个问题。
 
@@ -71,9 +71,12 @@ tags:
 
 在研究激光问题的时候，最典型的问题就是如何处理原子与光的作用。在半经典理论里，把光看做经典的电磁场，用麦克斯韦方程组描述，把原子看成量子化的，用量子力学描述，即光学布洛赫方程。
 ![](https://HistoireaParis.github.io/img/post3/10.PNG)
-我门可以看到
+我门可以看到之前提到的**Lorenz**的简化气象模型与激光器双能级单模输出的数学模型几乎一致。于是我们就可以把目前在使用的激光器进行分类，根据需要描述它系统状态的变量个数(自由度)。
+
 ## Laser classification
 
+![](https://HistoireaParis.github.io/img/post3/11.PNG)
+如上图所示，我实习所要研究的量子点激光器就属于半导体激光器的范畴，即B类激光器。
 
 
 
