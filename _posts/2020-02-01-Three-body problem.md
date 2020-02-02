@@ -79,58 +79,8 @@ tags:
 如上图所示，我实习所要研究的量子点激光器就属于半导体激光器的范畴，即B类激光器。
 
 
-
-
-
-
-
-
-
-
-
-
-普朗克的经验公式取得了成功，但是并不能从已知的理论中得到证明，而更像是取巧得来。于是，他决定进一步寻找隐藏在上述公式背后的物理实质。
-
-但是经过努力后，他得出了一个同经典概念严重背离的物理解释，即黑体空腔上器壁上的原子谐振子的能量是量子化的，而且谐振子与腔内电磁波的能量交换也是量子化的。
-
-他将能量E划分为P个相等的能量单元，于是有
-  <img src="http://chart.googleapis.com/chart?cht=tx&chl=  E=P\varepsilon_0
-" style="border:none;">
-这些能量单元epsilon_0可以按照不同的比例分配给N个谐振子。由于这些能量单元都是不可区分的，因此分配方案可以求出。以P=10个能量单元分配到N=5个谐振子上为例。我们由排列组合(十个完全一样的小球被5-1=4个相同的横线分开)可以轻易得出，分配方案有下列这么多种：
-![](https://HistoireaParis.github.io/img/post2/3.gif)
-推而广之，P个能量单元分配到N个谐振子的方案数就是：
-![](https://HistoireaParis.github.io/img/post2/4.gif)
-显然P>>1,N>>1,可以采用斯特令近似公式
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=  N!=N^N
-" style="border:none;">
-将上式化为
-![](https://HistoireaParis.github.io/img/post2/5.gif)
-分配方案数Omega与N个谐振子的玻尔兹曼熵S_N的关系为
-![](https://HistoireaParis.github.io/img/post2/6.gif)
-又因为总能量为E，故振子的平均能量为<img src="http://chart.googleapis.com/chart?cht=tx&chl=  \bar\varepsilon = \frac{P\varepsilon_0}{N}
-" style="border:none;">
-带入S_N并除以N得到单个谐振子的熵S为
-![](https://HistoireaParis.github.io/img/post2/7.gif)
-再根据下列热力学关系，对平均能量epsilon_0微分得
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=  \frac{1}{T} = \frac{dS}{d\bar\varepsilon}
-" style="border:none;">
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=  \bar\varepsilon = \frac{\varepsilon_0}{e^{\varepsilon_0/kT}-1}
-" style="border:none;">
-考虑到维恩的假设二，谐振子的能量必定正比于辐射场的频率，所以epsilon_0=hv。h也被称为普朗克常数(*Planck's constant*)。
-
-小插曲：普朗克推算完这些公式，在得知自己要打破经典物理的根基时，把这个正比常数用h来表示，即德语里的救命“Hilfe”的缩写。
-
 ## 04
 
-#### 关联
-我们回首再看走过的路，会发现很多有趣的现象。比如，普朗克公式与维恩公式和瑞利公式的关系。
-![](https://HistoireaParis.github.io/img/post2/4.jpg)
-
-我们假设按照瑞利的想法，振子的平均能量为KT，这在特定温度下为一个定值。当v很小的时候，KT的数量级肯定比hv的要大的多，所以可以满足KT里包含整数个hv的条件；但当v很大的时候，hv超过了KT的数量级，KT的范围内就不能包括整数个(甚至一个)hv的能量单元，所以就不能解释现实的物理现象了。
-![](https://HistoireaParis.github.io/img/post2/5.png)
-
-#### 验证
-我们可以更形象地理解普朗克公式，那就是3K宇宙背景辐射(*Cosmic Microwave Background*),是宇宙学中“大爆炸”遗留下来的热辐射，其特征和绝对温标2.725K的黑体辐射相同。可以说明，宇宙诞生之初，各种基本粒子达到了热平衡，即所谓的黑体状态。
 
 
 ## 引用
