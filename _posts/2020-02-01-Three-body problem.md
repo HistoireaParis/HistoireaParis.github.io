@@ -92,10 +92,8 @@ tags:
 我想在之后实习里，这些疑惑会慢慢解开。
 
 
-
-
 ## 引用
 
-1.《*The Quantum Theory of Light, 3rd ed. (Oxford Science Publications)*》 2000 **Rodney Loudon**
+1.《*Nonlinear Dynamics And Chaos: With Applications To Physics, Biology, Chemistry, And Engineering*》 2001 **Stephen Strogatz**
 
-2.《*普朗克公式推导的历史探究*》 1985 **金尚年, 田卫东** 复旦大学物理系
+2.*Semiconductor lasers: High-speed and nonlinear dynamics* M2 ROSP Course, Télécom Paris, M.Frédéric GRILLOT
