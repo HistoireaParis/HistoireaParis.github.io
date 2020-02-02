@@ -24,6 +24,8 @@ tags:
 
 # 01
 
+##Chaos is not an invention but a real discovery!
+
 虽然动力学目前是一个跨学科的主题，但是它最原本是来源于物理学的一个分支。自17世纪中叶，**Newton**发明了微分方程和牛顿经典力学，以及发现了著名的万有引力定律(**universal gravitation**)用来解释**Kepler**的行星运动法则。这些成就使人们理解了两体运动，即计算地球与太阳的互相作用——经典的平方反比的定律。接下来几代的数学家和物理学家都想对于三体问题(太阳，地球，月亮)上扩展**Newton**的研究方法，让人惊奇的是，这个似乎比两体问题难得多，甚至是无解的(无法得到精确解的形式)。
 
 在1887年，为了祝贺自己的60岁寿诞，瑞典国王奥斯卡二世赞助了一项现金奖励的竞赛，征求三体问题的解答，法国数学家**Poincaré**对此作出了卓越的贡献，他介绍了一种新的观点，更重视定性分析而不是定量。比如，他注重于“太阳系是否永远稳定，或者说一些行星是否最终会飞向无穷远的尽头”，而不是去求得这些行星在任意时刻的精确位置。于是，他发明了一种强大的几何方法去做定性分析，并最终成为第一个个对混沌理论**Chaos**接触的人。
@@ -50,6 +52,8 @@ tags:
 
 # 02
 
+##Phase Space
+
 **Edward Lorenz**用了**Poincaré**的几何方法——相空间(**Phase Space**)来定性处理这个问题。
 
 那么什么是相空间呢？
@@ -61,37 +65,27 @@ tags:
 
 总结出三个**Chaos**的特性：第一，它在相空间的轨迹绝对不是周期性的，但是却是沿着一个叫奇异吸引子的虚拟表面运动的；第二，对初值条件非常非常敏感，一点微小的波动都会有巨大的变化；第三，**Poincaré-Bendixon theorem**，至少在具有3维相空间的确定性连续系统中才能观察到混沌行为，低于3维的连续系统没有这个现象。
 
-## 03
+# 03
 
-我们可以从统计力学，电磁学等不同角度来探究普朗克公式的推导。整体的思想是把瑞利在低频的优点和维恩在高频的优点结合起来。
+## Analogy between fluids and laser
 
-### 天才的内插法
+在研究激光问题的时候，最典型的问题就是如何处理原子与光的作用。在半经典理论里，把光看做经典的电磁场，用麦克斯韦方程组描述，把原子看成量子化的，用量子力学描述，即光学布洛赫方程。
+![](https://HistoireaParis.github.io/img/post3/10.PNG)
+我门可以看到
+## Laser classification
 
-1899年，普朗克运用经典电磁理论，研究了封闭在一个具有理想反射壁的空腔的电磁辐射，采用合资振子模型，由运动方程出发，导出单位体积的电磁辐射能和频率间隔的模式数，振子平均能量的关系：
-<img src="http://chart.googleapis.com/chart?cht=tx&chl= u= \frac{8\pi v^2}{c^3} \bar{\varepsilon}" style="border:none;">
-接着用热力学方法探讨上式的振子平均能量的形式。他以维恩公式的
-<img src="http://chart.googleapis.com/chart?cht=tx&chl= u(v)= \frac{8\pi v^2}{c^3} \alpha e^{-\frac{\beta v}{T}}" style="border:none;">
-以及相应的热力学关系(熵S)为一极限情况
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-\frac{\mathrm{d^2}S }{\mathrm{d} \bar{\varepsilon^2 }}=-\frac{1}{a\bar{\varepsilon}}" style="border:none;">
-并以鲁本斯和库尔鲍姆的实验结果“单色辐射的强度在温度高时与温度成正比”及其相应的热力学关系为另一极限
-<img src="http://chart.googleapis.com/chart?cht=tx&chl= \frac{\mathrm{d^2}S }{\mathrm{d} \bar{\varepsilon^2 }}=-\frac{c}{\bar{\varepsilon}^2}
-" style="border:none;">
-做了天才的猜测(默默吐槽就是把两个经典实验结论综合了一下)，使用内插法，得到
-![](https://HistoireaParis.github.io/img/post2/2.gif)
-对此积分可得到
-![](https://HistoireaParis.github.io/img/post2/1.gif)
-又因为
-<img src="http://chart.googleapis.com/chart?cht=tx&chl= \frac{\mathrm{d}S }{\mathrm{d} \bar{\varepsilon }}=\frac{1}{T}
-" style="border:none;">
-立即得到
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=  \bar{\varepsilon }=\frac{\beta}{e^{-\beta/\alpha T}-1}
-" style="border:none;">
-后来人们求出alpha和beta所代表的物理常数，就可得到经典的普朗克公式：
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=  u_vdv=\frac{8 \pi v^2}{c^3}\frac{hv}{e^{hv/k T}-1}
-" style="border:none;">
 
-### Hilfe！
+
+
+
+
+
+
+
+
+
+
+
 普朗克的经验公式取得了成功，但是并不能从已知的理论中得到证明，而更像是取巧得来。于是，他决定进一步寻找隐藏在上述公式背后的物理实质。
 
 但是经过努力后，他得出了一个同经典概念严重背离的物理解释，即黑体空腔上器壁上的原子谐振子的能量是量子化的，而且谐振子与腔内电磁波的能量交换也是量子化的。
