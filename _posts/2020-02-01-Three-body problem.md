@@ -50,120 +50,16 @@ tags:
 
 # 02
 
-**Edward Lorenz**用了**Poincaré**的几何方法——相空间(**Phase Space**)来
+**Edward Lorenz**用了**Poincaré**的几何方法——相空间(**Phase Space**)来定性处理这个问题。
 
+那么什么是相空间呢？
 
-那么什么是光腔的空间模式（*mode*）呢？
+>在一相空间中，系统的每个自由度或参数可以用多维空间中的一轴来代表。对于系统每个可能的状态，或系统参数值允许的组合，可以在多维空间描绘成一个点。通常这样的描绘点连接而成的线可以类比于系统状态随着时间的演化。最后相图可以代表系统可以存在的状态，而它的外型可以轻易地阐述系统的性质。
 
->空间模式，就是描述电磁场在有限空间V的数学基。
+![](https://HistoireaParis.github.io/img/post3/9.PNG)
+上图就是预测气象的微分方程在三维相空间的图像(**Phase Diagram**)，其为一个奇异吸引子。我们可以看出，在同一时间，两个相邻很近的点将会在之后的时间里演化到完全不同的地方。
 
-但是它直观的感受是什么呢？为了使计算尽可能简单，我们选择一个长度为L的立方体腔，假设其四壁假定能完美导电，电场强度矢量E(r，t)在边界处消失为0，如Fig1.1所示。
-![](https://HistoireaParis.github.io/img/post2/1.PNG)
-
-### Spatial Dependence
-
-第一部分的计算完全是经典理论可以解释的，不受量子化（*quantization*）的影响（可能在之后的章节介绍）。由真空中电场的波动方程列出电场的关系：
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-{\partial ^{2}E(r,t) \over \partial t^{2}}=c^{2}\nabla ^{2}E(r,t)" style="border:none;">
-这里c是光速（*the velocity of light*）,加上麦克斯韦方程组：
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-\nabla \cdot E(r,t)=0" style="border:none;">
-其方程组的解满足边界条件后，如下所示
-![](https://HistoireaParis.github.io/img/post2/2.PNG)
-我们可以得知，E(t)与就具体位置无关，波矢(*wavevector*)**k**满足
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-k_x=\pi\nu_x/L" style="border:none;">
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-k_y=\pi\nu_y/L" style="border:none;">
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-k_z=\pi\nu_z/L" style="border:none;">
-其中v为整数，且只能有一个为0
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-\nu_x, \nu_y, \nu_z = 0, 1, 2, 3 , ..." style="border:none;">
-这些可允许存在的波矢可以画作一个三维的点阵(见Fig1.2)，每个点之间的距离为pi/L:
-![](https://HistoireaParis.github.io/img/post2/3.PNG)
-
-我们可以很轻易地验证得到的答案，比如让y=0或L，z=0或L，E在x方向的分量就为0了。还发现边界条件(*boundary condition*)也可以满足把cos和sin互换，但是麦克斯韦方程组(*Maxwell equation*)就不能满足了，这有悖于对称性，所以我们更正为：
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-k \cdot E(t)=0" style="border:none;">
-也就是说E(t)与波矢k成直角，故对于每个允许的波矢都有两个不同的独立的方向，即偏振。
-
->综上所述，因为边界条件的限制，波矢k必须取离散的整数，那么每个三元整数组(x,y,z)和偏振的(1，2)定义了一个辐射场的空间模式。任意一个光腔内激发出的电磁场都可以用这些模式的求和表示。
-
-那么怎么计算模式的数目呢？
->回归积分的思想，我们先要知道k到k+dk之间的波矢数。这个正好是Fig1.2中，半径k和k+dk之间的八分之一球壳包含的波矢数(因为波矢k只能取正整数)。如果进一步近似，因为现实中pi/L远远要比k的值小，所以我们当作k是连续的，考虑到了偏振的两个状态。由此可知：
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-\frac{1} 8 (4\pi k^2 dk)(\pi/L)^{-3}\times2" style="border:none;">
-
-
-接着，我们定义模式密度为每单位体积内的模式数，那么
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-\rho(k)dk =k^2dk/\pi^2" style="border:none;">
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-\rho(\omega)d\omega =\omega^2d\omega/\pi^2c^3" style="border:none;">
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-\rho(\nu)d\nu =8\pi\nu^2d\nu/c^3" style="border:none;">
-
-根据模式密度，我们沿着波矢空间积分或者沿着角速度积分都可以，就求得整个的模式数。
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-\sum_{\lambda =1,2}\sum_{k} \rightarrow \int dk\left ( Vk^2/\pi^2 \right )\rightarrow \int d\omega \left ( V\omega ^2/\pi^2c^3 \right )" style="border:none;">
-
-我们可以预见，只要知道模式数，我们就可以直接与总能量建立联系。因为接下来的这一步就是考虑，能量是怎么在这些可允许的模式上分布的，也就是普朗克伟大的地方。
-
-### Time Dependence
-
-我们之前说了很多关于电磁场的空间依赖关系，第二步就是计算在温度T下，每个模式上包含了多少能量。人们为了这个争论了很久，进而衍生出“紫外灾难”，让维恩和瑞利等大物理学家栽了跟头。
-
-#### 维恩近似
-
-在东普鲁士出生的维恩(*Wilhelm Wien*)与同事路德维希·霍尔伯恩(*Ludwig Holborn*)一起研究用勒沙特列(*Le Chatelier*)温度计测量高温的方法，并对热动力学进行了相关的研究。也就在这段期间，他从经典热力学的思维出发，借统计热力学之手(麦克斯韦速率分布)，并完全基于对实验数据的经验总结而得到了维恩近似(*Wien Approximation*)。
-
-我们省略之前经典热力学的推导步骤，直接由这个中间结论入手(如果有机会我会给大家介绍推到过程):
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-u=v^3\varphi (\frac{v}{T}) " style="border:none;">
-
-以当时维恩的思考方式，能通过一次实验，就可以得到一组在给定温度T下u与v的一一对应数据，进而描绘能量密度u随频率v的变化曲线，拟合出函数的形式，再扩展为任意温度T下的任意频率v的能量密度u。
-
-于是，1896年，维恩通过实验数据拟合出了这个函数，并通过几个特殊假设，导出了黑体辐射的最终近似公式。
-
->假设一：温度为T的黑体辐射，可以类比为同样温度下的理想气体分子，适用于热力学当中的麦克斯韦速率分布律。即
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-f(v)=4\pi v^2 (\frac{m}{2\pi k_B T} )^{\frac{3}{2}}  e^{-{\frac{m v^2}{2 k_B T }}}  " style="border:none;">
-
->假设二：这种类比的理想气体分子的动能与黑体辐射的频率成正比。即
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-\frac{1}{2}mv^2=Kv " >
-由这两个假设，把麦克斯韦速率分布律中的速度v换成频率v，联立可得
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-f(v)=4\pi \frac{2Kv}{m} (\frac{m}{2\pi k_B T} )^{\frac{3}{2}}  e^{-{\frac{Kv}{ k_B T }}}  " style="border:none;">
-维恩当然想到，除了将黑体辐射与理想气体分子进行类比，其能量密度u与分布律f应成正比关系，再加上还应与封闭容器的单位体积内的模式数成正比，于是
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-f(v)=C \frac{8\pi v^2}{c^3} \times4\pi \frac{2Kv}{m} (\frac{m}{2\pi k_B T} )^{\frac{3}{2}}  e^{-{\frac{Kv}{ k_B T }}}    " style="border:none;">
-
- 综上所述，我们常见的维恩公式就是
- <img src="http://chart.googleapis.com/chart?cht=tx&chl=
- u(v)= \alpha v^3 e^{-\frac{\beta v}{T}}" style="border:none;">
-
-那么接下来的工作就是实验测得常数alpha和beta的具体值就好了。事情在短波段(紫外区)进展的很好，但是长波段(红外区)就出现了严重偏差。
-![](https://HistoireaParis.github.io/img/post2/3.jpg)
-
-小短评：虽然维恩的假设现在看起来很荒谬，方法也不太恰当，但是是因实验远远领先于理论的表现，最终也起到了一定的历史意义。他就像一个最卓越的工程师，在对问题本质一无所知的情况下，给出了一定范围内的解决方案。
-
-#### 瑞利公式
-
-1900年6月，英国物理学家瑞利(*Rayleigh*)为了反对维恩在推导过程中引入的假设不可靠，就利用电磁波振动模型(即按照经典电磁场理论和经典统计物理理论)导出了一个新的辐射公式，后经金斯(*Jeans*)于1905年改进，合称瑞利-金斯公式。
-
-当时思考空腔内电磁波和腔壁做简谐运动的原子交换能量达到平衡时满足的条件时：
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-u(v,T)= \rho(v)\bar{\varepsilon}(v,T)" style="border:none;">
-其中，等式右边第一项为模式密度，第二项为空墙器壁原子做简谐运动的平均能量。为了计算它，瑞利采用了统计力学中的能量均分定理：
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-\bar{\varepsilon}(v,T)=\frac{\int_{0}^{\infty}\varepsilon e^{-\varepsilon /kT}d\varepsilon }{\int_{0}^{\infty}e^{-\varepsilon/kT}d\varepsilon } =kT  " style="border:none;">
-所以，带入可知，常见的瑞利公式为
-<img src="http://chart.googleapis.com/chart?cht=tx&chl=
-udv= \frac{8\pi v^2}{c^3} kT dv" style="border:none;">
-我们很容易看出，当频率v越来越大的时候，能量密度u也越来越大，直到无穷，即在短波区(高频紫外区)变为**“紫外灾难”**(*ultraviolet catastrophe*)。维恩因为理论上的不严格，进而与实验不相符时可以理解的，但是瑞利公式是严格按照经典理论，走着“能量均分”的阳光大道得出的，就给物理界带来极大的困惑，动摇了经典物理的基础。
-![](https://HistoireaParis.github.io/img/post2/4.png)
+总结出三个**Chaos**的特性：第一，它在相空间的轨迹绝对不是周期性的，但是却是沿着一个叫奇异吸引子的虚拟表面运动的；第二，对初值条件非常非常敏感，一点微小的波动都会有巨大的变化；第三，**Poincaré-Bendixon theorem**，至少在具有3维相空间的确定性连续系统中才能观察到混沌行为，低于3维的连续系统没有这个现象。
 
 ## 03
 
