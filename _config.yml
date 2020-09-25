@@ -54,16 +54,21 @@ kramdown:
   input: GFM                            # use Github Flavored Markdown !important
 
 
-# Gitalk
-gitalk:
-  enable: true    #是否开启Gitalk评论
-  clientID: 3539948c746a9f8e8f3f                             #生成的clientID
-  clientSecret: 96e52a66c5eea29517010946d16b683effe07c07    #生成的clientSecret
-  repo: histoireaparis.github.io    #仓库名称
-  owner: HistoireaParis    #github用户名
-  admin: HistoireaParis
-  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+# # Gitalk
+# gitalk:
+#   enable: true    #是否开启Gitalk评论
+#   clientID: 3539948c746a9f8e8f3f                             #生成的clientID
+#   clientSecret: 96e52a66c5eea29517010946d16b683effe07c07    #生成的clientSecret
+#   repo: histoireaparis.github.io    #仓库名称
+#   owner: HistoireaParis    #github用户名
+#   admin: HistoireaParis
+#   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
+# Disqus
+disqus:
+  enable: true
+  shortname: https-histoireaparis-github-io
+  count: true
 
 # 统计
 
