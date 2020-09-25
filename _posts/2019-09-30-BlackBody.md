@@ -1,15 +1,13 @@
 ---
 layout:     post
-title:      BlackBody
+title:      Black Body
 subtitle:   
 date:       2019-09-30
 author:     Z
 header-img: img/post2/1.jpg
 catalog: true
 tags:
-    - 黑体辐射
     - Optical Networks and Photonic Systems
-    - 光通信
 ---
 
 # 前言

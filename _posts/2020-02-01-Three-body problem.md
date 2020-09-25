@@ -7,9 +7,7 @@ author:     Z
 header-img: img/post3/1.jpg
 catalog: true
 tags:
-    - 混沌理论
     - Optical Networks and Photonic Systems
-    - 光反馈
 ---
 
 # 前言
