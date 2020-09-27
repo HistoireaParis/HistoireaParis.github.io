@@ -42,4 +42,10 @@ tags:
 ![**8 Rue Grands-Augustins**](https://HistoireaParis.github.io/img/post4/6.jpg)
 ![](https://HistoireaParis.github.io/img/post4/1.PNG)
 
+又如在多菲内路旁边的**Rue Grands-Augustins**七号，毕加索(**Picasso**)曾在1937年直到1948年二战结束安置了他的画室，并完成了闻名遐迩的格尔尼卡(*Guernica*)。以至于在1945年欧内斯特·米勒·海明威(**Ernest Miller Hemingway**)，在巴黎解放的时候，把他的军用吉普车停靠在这里，敲响了门，发现画家却不在，于是乎留下了一个礼物——一箱手榴弹，上面写着"**To Picasso from Hemingway**"。
+
+![](https://HistoireaParis.github.io/img/post4/8.JPG)
+![](https://HistoireaParis.github.io/img/post4/7.jpg)
+
+
 # 03
