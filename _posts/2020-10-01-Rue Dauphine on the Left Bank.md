@@ -52,8 +52,10 @@ tags:
 
 让我们的思绪回到1947年，一个俱乐部在多菲内街与克里斯汀街交界处的角落里建成了，名叫**Le Tabou**。对于小说作家，诗人，剧作家和爵士小号乐手鲍里斯·维安(**Boris Vian**)来说，是战后新一代理想的避难所。作为在战后巴黎最传奇的爵士乐俱乐部，**Le Tabou**是那些午夜之后从花神咖啡店(**Café de Flore**)和双叟咖啡店(**Les Deux Magots**)出来的诗人，画家和哲学家们的下一站，狂热的爵士乐迷们往往会一直跳到天亮。萨特(**Sartre**)，德波伏娃(**De Beauvoir**)和谷克多(**Cocteau**)是常客，而**Juliette Gréco**扮演主持人，有时唱歌有时吟诗，与此同时鲍里斯·维安(**Boris Vian**)指挥爵士乐队，迈尔士·戴维斯(**Miles Davis**)为这个混响贡献他的小号。
 
-![](https://HistoireaParis.github.io/img/post4/9.jpg)
+![](https://HistoireaParis.github.io/img/post4/11.jpg)
 
 白驹过隙，2000年奢华的五星级酒店**Hôtel d’Aubusson**管理层决定赋予他们的酒吧新使命，于是多菲内街33号，**Café Laurent**诞生了，而之前的半个世纪里它曾是那颗爵士乐的明星——**Le tabou**。
 
 ![](https://HistoireaParis.github.io/img/post4/10.jpg)
+
+# 04
