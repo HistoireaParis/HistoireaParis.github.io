@@ -79,18 +79,18 @@ chrome-tab-theme-color: "#000000"
 service-worker: true
 
 #Friends
-friends: [
-    {
-        title: "Frédéric GRILLOT",
-        href: "https://perso.telecom-paristech.fr/grillot/"
-    },{
-        title: "John Bowers",
-        href: "https://optoelectronics.ece.ucsb.edu/"
+#friends: [
+# {
+#        title: "Frédéric GRILLOT",
+#        href: "https://perso.telecom-paristech.fr/grillot/"
+#    },{
+#        title: "John Bowers",
+#        href: "https://optoelectronics.ece.ucsb.edu/"
     # },{
     #     #title: "Apple",
     #    # href: "https://apple.com"
     # },{
     #    # title: "Apple Developer",
     #    # href: "https://developer.apple.com/"
-    }
-]
+  #  }
+#]
