@@ -2,99 +2,338 @@
 layout: default
 title: CV
 description:
-header-img: "img/Conserve/10.jpg"
-permalink: /CV.html
+header-img: "img/Conserve/13.jpg"
 ---
 
+<!-- Page Header -->
+<header class="intro-header" style="background-image: url('{{ site.baseurl }}/{% if page.header-img %}{{ page.header-img }}{% else %}{{ site.header-img }}{% endif %}')">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div class="site-heading" id="tag-heading">
+          <h1>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</h1>
+          <span class="subheading">{{ page.description }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- CSS definition-->
+
+<head>
+  <style type="text/css">
+    *,
+    *:before,
+    *:after {
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    html {
+      font-size: 100%;
+    }
+
+    body {
+      -webkit-font-smoothing: antialiased;
+      color: #333332;
+      font-family: Lora, serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 1.4;
+      text-rendering: optimizeLegibility;
+    }
+
+    .skill-set li:hover {
+      background: #3498db;
+    }
+
+    h1 {
+      color: rgba(0, 0, 0, .75);
+    }
+
+    .wrapper {
+      height: 100%;
+    }
+
+    .left {
+      background-color: rgba(0, 0, 0, .025);
+      border-right: 1px solid rgba(0, 0, 0, .05);
+      float: right;
+      height: 100%;
+      margin-left: -1px;
+      min-width: 256px;
+      position: fixed;
+      width: 33.33%;
+
+    }
+
+    .right {
+      float: right;
+      height: 100%;
+      position: relative;
+      width: 66.66%;
+    }
+
+
+    .name-hero {
+      background: rgba(0, 0, 0, .001);
+      bottom: 0;
+      height: 290px;
+      left: 0;
+      margin: auto;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 85%;
+    }
+
+    .me-img {
+      background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/36334/profile/profile-512_4.jpg) no-repeat center center;
+      background-size: 100%;
+      background-position: 0px;
+      border-radius: 100%;
+      height: 150px;
+      margin: 0 auto;
+      position: relative;
+      width: 150px;
+    }
+
+    .name-hero h1 {
+      font-family: Open Sans, sans-serif;
+      font-size: 1.5em;
+      text-align: center;
+    }
+
+    .name-hero h1 em {
+      color: rgba(0, 0, 0, .3);
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    .name-hero p {
+      color: rgba(0, 0, 0, .5);
+      font-size: .75em;
+      line-height: 1.5;
+      margin: 0 8px 0 0;
+      text-align: center;
+    }
+
+    .name-hero .name-text {
+      margin: 0 auto;
+      width: 85%;
+    }
+
+    .inner {
+      margin: 0 auto;
+      max-width: 975px;
+      padding: 3em;
+    }
+
+    .inner h1 {
+      font-size: 1.75em;
+    }
+
+    .inner p {
+      color: rgba(0, 0, 0, .3);
+    }
+
+    .inner p em {
+      color: rgba(0, 0, 0, .75);
+      font-style: normal;
+    }
+
+    .inner section {
+      margin: 100px auto;
+    }
+
+    ul {
+      list-style-type: none;
+      margin-top: -10px;
+      max-width: 570px;
+      padding: 0;
+    }
+
+    .skill-set li {
+      background: rgba(0, 0, 0, .75);
+      border-radius: 5px;
+      color: #FFF;
+      display: inline-block;
+      list-style: none;
+      margin: 15px 15px 0 0;
+      padding: 10px;
+      text-align: justify;
+    }
+
+    @media screen and (max-width: 48em) {
+
+      .right,
+      .left {
+        float: none;
+        position: relative !important;
+        width: 100%;
+        min-height: 500px;
+      }
+
+      .handmade {
+        text-align: center !important;
+        margin-top: 0px !important;
+      }
+
+      @media screen and (max-width: 75em) {
+        body {
+          font-size: 16px;
+        }
+      }
+
+      @media screen and (max-width: 60em) {
+        body {
+          font-size: 14px;
+        }
+      }
+
+      .clearfix:after {
+        content: " ";
+        /* Older browser do not support empty content */
+        visibility: hidden;
+        display: block;
+        height: 0;
+        clear: both;
+      }
+
+      .handmade {
+        text-align: right;
+        margin-top: 100px;
+      }
+
+      .handmade em {
+        font-family: 'Shadows Into Light', cursive;
+        font-size: 1.25em;
+        margin-left: 5px;
+      }
+  </style>
+</head>
+
 <!-- Language Selector -->
-<select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)">
-    <option value="0" selected> 中文 Chinese </option>
-    <option value="1"> 英文 English </option>
+<select class="sel-lang" onchange="onLanChange(this.options[this.options.selectedIndex].value)">
+  <option value="0" selected> Chinese </option>
+  <option value="1"> English </option>
 </select>
 
 <!-- Chinese Version -->
 <div class="zh post-container">
 
-    <!--copied from markdown -->
-    <blockquote><p>永远年轻<br>
-    永远热泪盈眶</p></blockquote>
+  <!-- HTML content-->
 
-    <p>Hey，我是<strong>赵诗源</strong>，一个法国在读博士，现在在<a href="https://www.telecom-paris.fr/">Télécom Paris</a>和<a href="https://www.ip-paris.fr/">l’Institut Polytechnique de Paris</a>求学。</p>
-
-    <p>学习之余，我会在这里分享我的一些经验和知识</p>
-
-    <p>这是我的利用 <a href="https://pages.github.com/">GitHub Pages</a> 与 <a href="http://jekyll.com.cn/">Jekyll</a> 搭建的 个人博客。我在GitHub主页<a href="https://github.com/HistoireaParis">👉GitHub</a>。如果有什么问题，欢迎提出探讨~</p>
-
-    <p></p>
-
-    <h5>Talks</h5>
-
-    <ul>
-        <li><a href="https://github.com">GitHub</a></li>
-        <li><a href="http://jekyll.com.cn/">jekyll</a></li>
-        <li><a href="https://analytics.google.com/analytics">Google Analytics</a></li>
-    </ul>
 </div>
 
 <!-- English Version -->
 <div class="en post-container">
-    <blockquote><p>Always believe. <br>
-    Always moved.</p></blockquote>
 
-    <p>Hi, I am <strong>Shiyuan ZHAO</strong>, you can call me <strong>Shiyuan</strong>. I am a
-      graduate student and currently working in <a href="https://www.telecom-paris.fr/">Télécom Paris</a> and <a href="https://www.ip-paris.fr/">l’Institut Polytechnique de Paris</a>
-      as a Phd student.
-    </p>
+  <!-- HTML content-->
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic|Open+Sans:300,400,500,700|Waiting+for+the+Sunrise|Shadows+Into+Light' rel='stylesheet' type='text/css'>
 
-    <p>This is my personal blog, through making Github Pages and Jekyll. My GitHub 👉 <a href="http://histoireaparis.github.io">Github Blog Z</a>.</p>
+  <div class="wrapper clearfix">
+    <div class="left">
+      <div class="name-hero">
+        <div class="me-img">
+          <img src="https://histoireaparis.github.io/img/myself.jpg" alt="self picture" width="300" height="250">
+        </div>
+        <div class="name-text">
+          <h1>Shiyuan <em>ZHAO</em></h1>
+          <p>Télécom Paris & Institut Polytechnique de Paris</p>
+          <p>19 place Marguerite Perey 91120 Palaiseau France</p>
+          <p>shiyuan.zhao@telecom-paris.fr</p>
+          <p>+33 (0) 6 71 44 22 72</p>
+        </div>
+      </div>
+    </div>
 
-    <p>I am willing to sharing my knowledges and experiences here.</p>
+    <div class="right">
 
-    <h5>Talks</h5>
+      <div class="inner">
+        <section>
+          <h1>Experience</h1>
+          <p>Fall 2020 - Present <em> Télécom Paris & Institut Polytechnique de Paris | Phd Student </em></p>
+          <p style="color:orange">Supervisor : Frédéric Grillot</p>
+          <p>Spring 2020 - Fall 2020 <em> Télécom Paris & Institut Polytechnique de Paris | Research Intern </em></p>
+          <p style="color:orange">Investigation of quantum dot lasers on silicon</p>
+          <p>Fall 2019 - Spring 2020 <em> Institut Polytechnique de Paris & Université Paris-Saclay | Master's Degree </em></p>
+          <p style="color:orange">Optical Networks and Photonics Systems</p>
+          <p>Fall 2017 - Spring 2019 | <em> Télécom SudParis, Paris France | Diplôme d'Ingénieur </em></p>
+          <p style="color:orange">Electrical engineering</p>
+          <p>Fall 2014 - Spring 2017 | <em> Xidian University, Xi'an China | Bachelor's Degree </em></p>
+          <p style="color:orange">Electronic Science and Technology</p>
+        </section>
 
-    <ul>
-    <li><a href="https://github.com">GitHub</a></li>
-    <li><a href="http://jekyll.com.cn/">jekyll</a></li>
-    <li><a href="https://pages.github.com/">GitHub Pages</a></li>
-    </ul>
+        <section>
+          <h1>Research Interests</h1>
+          <ul class="skill-set">
+            <li>Semiconductor physics</li>
+            <li>Nonlinear photonics</li>
+            <li>High-speed optical communication systems</li>
+            <li>Photonics integrated circuits</li>
+            <li>Squeezing light</li>s
+            <li>Bifurcation and Chaos theory</li>
+          </ul>
+        </section>
+
+        <section>
+          <h1>References</h1>
+          <p>William Grand | <em>Grand Interactive, llc. | CEO</em></p>
+          <p>(617) 448-0910 | wgrand@grandinteractive.com</p>
+          <p>Eric Chauvin | <em>PadMatcher Inc. | CEO</em></p>
+          <p>(617) 448-0910 | eric@padmatcher.com</p>
+          <p>Chris Heller <em>Penrose Realty LLC. | Broker</em></p>
+          <p>(617) 794-4554 | chris@penroserealty.com</p>
+        </section>
+
+        <div class="group-img">
+          <img src="https://histoireaparis.github.io/img/Hezhao.jpeg" alt="self picture" width="800" height="650">
+        </div>
+
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Handle Language Change -->
 <script type="text/javascript">
-    // get nodes
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
+  // get nodes
+  var $zh = document.querySelector(".zh");
+  var $en = document.querySelector(".en");
+  var $select = document.querySelector("select");
 
-    // bind hashchange event
-    window.addEventListener('hashchange', _render);
+  // bind hashchange event
+  window.addEventListener('hashchange', _render);
 
-    // handle render
-    function _render(){
-        var _hash = window.location.hash;
-        // en
-        if(_hash == "#en"){
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $zh.style.display = "none";
-        // zh by default
-        }else{
-            // not trigger onChange, otherwise cause a loop call.
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $en.style.display = "none";
-        }
+  // handle render
+  function _render() {
+    var _hash = window.location.hash;
+    // en
+    if (_hash == "#en") {
+      $select.selectedIndex = 1;
+      $en.style.display = "block";
+      $zh.style.display = "none";
+      // zh by default
+    } else {
+      // not trigger onChange, otherwise cause a loop call.
+      $select.selectedIndex = 0;
+      $zh.style.display = "block";
+      $en.style.display = "none";
     }
+  }
 
-    // handle select change
-    function onLanChange(index){
-        if(index == 0){
-            window.location.hash = "#zh"
-        }else{
-            window.location.hash = "#en"
-        }
+  // handle select change
+  function onLanChange(index) {
+    if (index == 0) {
+      window.location.hash = "#zh"
+    } else {
+      window.location.hash = "#en"
     }
+  }
 
-    // init
-    _render();
+  // init
+  _render();
 </script>
