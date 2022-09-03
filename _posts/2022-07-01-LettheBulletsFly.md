@@ -1,25 +1,20 @@
 ---
 layout:     post
-title:      Let the Bullets Fly
+title:      General Theory of Relativity
 subtitle:   
-date:       2022-07-01
+date:       2022-09-01
 author:     Z
-header-img: img/post9/1.jpeg
+header-img: img/post9/1.jpg
 catalog: true
 tags:
-    - 历史拾遗
+- Phd study
+- Determinism
+- Chaos - Introduction
 
 ---
 # 前言
 
->这是美好的日子，也是苦难的日子。\
-这是才华横溢的年代，也是愚昧无知的年代。\
-这是信仰坚定的时期，也是怀疑一切的时期。\
-这是灿烂辉煌的季节，也是黯淡无光的季节。\
-这是希望的春天，也是绝望的冬天。\
-我们拥有选择一切的机会，我们其实一无所有。\
-我们走在通向天堂的道路上，我们正坠入万劫不复的地狱。\
--*《A Tale of Two Cities》 Charles Dickens 1859*
+>
 
 # 引子
 
