@@ -1,12 +1,12 @@
 @media (min-width: 1200px) {
   .post-container,
   .sidebar-container {
-    padding-right: 5%;
+    padding-right: 15px;
   }
 }
 @media (min-width: 768px) {
   .post-container {
-    padding-right: 5%;
+    padding-right: 15px;
   }
 }
 .sidebar-container {
@@ -172,9 +172,9 @@ a img:hover,
 a img:focus {
   cursor: zoom-in;
 }
-article {
+/* article {
   overflow-x: hidden;
-}
+} */
 blockquote {
   color: #808080;
   font-style: italic;
